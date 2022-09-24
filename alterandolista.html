@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #page-title{
+        text-align: center;
+    }
+    .flex-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #titulo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(168, 46, 234);
+    }
+    h3{
+        color: chartreuse;
+    }
+</style>
+<body>
+    
+    <h1 id="titulo">revisando-javascript</h1>
+
+    <div class="flex-div">
+        <h3>Tecnologias Front-End</h3>
+
+        <ul>
+            <li class="elemento-frontend">HTML</li>
+            <li class="elemento-frontend">CSS</li>
+            <li class="elemento-frontend">JAVASCRIPT</li>
+        </ul>
+    </div>
+
+    <div class="flex-div">
+        <h2>Tecnologias Back-End</h2>
+
+        <ul>
+            <li class="elemento-backend">PHP</li>
+            <li class="elemento-backend">JAVA</li>
+            <li class="elemento-backend">SQL</li>
+        </ul>
+    </div>
+    Escrevendo 
+    <script>
+        
+        document.getElementsByClassName("elemento-frontend")[0].innerHTML = "css"
+        document.getElementsByClassName("elemento-frontend")[1].innerHTML = "html"
+        document.getElementsByClassName("elemento-frontend")[2].innerHTML = "javascript"
+
+        document.getElementsByClassName("elemento-backend")[0].innerHTML = "MySQl"
+        document.getElementsByClassName("elemento-backend")[1].innerHTML = "php"
+        document.getElementsByClassName("elemento-backend")[2].innerHTML = "python"
+       
+        
+        
+    </script>
+</body>
+</html>
+
+
